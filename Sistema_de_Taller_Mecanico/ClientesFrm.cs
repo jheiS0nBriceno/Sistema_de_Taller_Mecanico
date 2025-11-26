@@ -36,7 +36,8 @@ namespace Sistema_de_Taller_Mecanico
             string apellidos = txtApellidos.Text;
             string telefono = txtTelefono.Text;
             string correo = txtCorreo.Text;
-            string fecha_registro = txtFechaRegistro.Text;
+            //string fecha_registro = txtFechaRegistro.Text;
+            string fecha_registro = txtFechaRegistro.Value.ToString("yyyy-MM-dd");
             bool resultado = false;
             if (cliente_id == 0)
 
@@ -64,6 +65,7 @@ namespace Sistema_de_Taller_Mecanico
             txtTelefono.Text = "";
             txtCorreo.Text = "";
             txtFechaRegistro.Text = "";
+            cliente_id = 0;
             txtDni.Focus();
         }
 
@@ -79,8 +81,26 @@ namespace Sistema_de_Taller_Mecanico
             txtDni.Text = dgdatos.CurrentRow.Cells["DNI"].Value.ToString();
             txtTelefono.Text = dgdatos.CurrentRow.Cells["Telefono"].Value.ToString();
             txtCorreo.Text = dgdatos.CurrentRow.Cells["Correo"].Value.ToString();
-            txtFechaRegistro.Text = dgdatos.CurrentRow.Cells["Fecha_Registro"].Value.ToString();
-            
+            //txtFechaRegistro.Text = dgdatos.CurrentRow.Cells["Fecha_Registro"].Value.ToString();
+            txtFechaRegistro.Value = Convert.ToDateTime(dgdatos.CurrentRow.Cells["Fecha_Registro"].Value.ToString());
+            cliente_id = Convert.ToInt32(dgdatos.CurrentRow.Cells["ID"].Value.ToString());
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dgdatos.CurrentRow.Cells["ID"].Value.ToString());
+            bool resultado = Clientes.Eliminar(id);
+            if (resultado)
+            {
+                MessageBox.Show("Cliente eliminado exitosamente.");
+                dgdatos.DataSource = Clientes.Obtener();
+            }
+            else
+            {
+                MessageBox.Show("Error al eliminar el cliente.");
+            }
+
         }
     }
 }

@@ -34,6 +34,11 @@
             this.btnClientes = new System.Windows.Forms.ToolStripButton();
             this.btnVehiculos = new System.Windows.Forms.ToolStripButton();
             this.btnMarcas = new System.Windows.Forms.ToolStripButton();
+            this.btnRepuestos = new System.Windows.Forms.ToolStripButton();
+            this.btnOrdenes = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.btnRepuesto_O = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +55,12 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnClientes,
             this.btnVehiculos,
-            this.btnMarcas});
+            this.btnMarcas,
+            this.btnRepuestos,
+            this.btnOrdenes,
+            this.toolStripButton3,
+            this.btnRepuesto_O,
+            this.toolStripButton5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -84,6 +94,46 @@
             this.btnMarcas.Text = "Marcas";
             this.btnMarcas.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // btnRepuestos
+            // 
+            this.btnRepuestos.Image = ((System.Drawing.Image)(resources.GetObject("btnRepuestos.Image")));
+            this.btnRepuestos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRepuestos.Name = "btnRepuestos";
+            this.btnRepuestos.Size = new System.Drawing.Size(81, 22);
+            this.btnRepuestos.Text = "Repuestos";
+            // 
+            // btnOrdenes
+            // 
+            this.btnOrdenes.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenes.Image")));
+            this.btnOrdenes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Size = new System.Drawing.Size(71, 22);
+            this.btnOrdenes.Text = "Ordenes";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(73, 22);
+            this.toolStripButton3.Text = "Servicios";
+            // 
+            // btnRepuesto_O
+            // 
+            this.btnRepuesto_O.Image = ((System.Drawing.Image)(resources.GetObject("btnRepuesto_O.Image")));
+            this.btnRepuesto_O.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRepuesto_O.Name = "btnRepuesto_O";
+            this.btnRepuesto_O.Size = new System.Drawing.Size(112, 22);
+            this.btnRepuesto_O.Text = "Repuesto Orden";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(114, 22);
+            this.toolStripButton5.Text = "toolStripButton5";
+            // 
             // PrincipalFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +159,11 @@
         private System.Windows.Forms.ToolStripButton btnClientes;
         private System.Windows.Forms.ToolStripButton btnVehiculos;
         private System.Windows.Forms.ToolStripButton btnMarcas;
+        private System.Windows.Forms.ToolStripButton btnRepuestos;
+        private System.Windows.Forms.ToolStripButton btnOrdenes;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton btnRepuesto_O;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
     }
 }
 
