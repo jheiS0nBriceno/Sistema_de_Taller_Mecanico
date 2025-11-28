@@ -86,9 +86,6 @@
     <EmbeddedResource Include="ClientesFrm.resx">
       <DependentUpon>ClientesFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MarcasFrm.resx">
-      <DependentUpon>MarcasFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </EmbeddedResource>
