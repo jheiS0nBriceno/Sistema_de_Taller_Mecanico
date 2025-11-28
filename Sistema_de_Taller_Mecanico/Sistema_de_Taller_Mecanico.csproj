@@ -53,10 +53,6 @@
       <DependentUpon>ClientesFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="MarcasFrm.cs" />
-    <Compile Include="MarcasFrm.Designer.cs">
-      <DependentUpon>MarcasFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modelos\Clientes.cs" />
     <Compile Include="Modelos\Marcas.cs" />
     <Compile Include="Modelos\Ordene.cs" />
@@ -104,9 +100,6 @@
     </Compile>
     <EmbeddedResource Include="ClientesFrm.resx">
       <DependentUpon>ClientesFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MarcasFrm.resx">
-      <DependentUpon>MarcasFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenesFrm.resx">
       <DependentUpon>OrdenesFrm.cs</DependentUpon>
